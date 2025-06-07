@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blue-50: #f0f1ff;
+  --color-blue-100: #e4e5ff;
+  --color-blue-200: #cdd1ff;
+  --color-blue-300: #a6a9ff;
+  --color-blue-400: #7573ff;
+  --color-blue-500: #493bff;
+  --color-blue-600: #3214ff;
+  --color-blue-700: #1e00ff;
+  --color-blue-800: #1a01d6;
+  --color-blue-900: #1703af;
+  --color-blue-950: #090077;
+}
+
+body {
+  font-family: "Inter";
+  @apply font-normal;
+  @apply text-base;
+  @apply text-neutral-900;
+  color: #313131;
+}
+
+html {
+  @apply motion-safe:scroll-smooth;
+  @apply bg-neutral-100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-extrabold;
+  @apply text-blue-950;
+}
+
+h1 {
+  @apply text-4xl;
+  @apply mt-2;
+  @apply mb-2;
+}
+
+h2 {
+  @apply text-3xl;
+  @apply mt-2;
+  @apply mb-2;
+}
