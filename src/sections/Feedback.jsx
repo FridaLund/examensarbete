@@ -5,7 +5,7 @@ function Form(props) {
   return (
     <form onSubmit={props.handleSubmit} className={props.className}>
       <div className="flex flex-col gap-4">
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-wrap">
           <div className="flex flex-col flex-1">
             <label htmlFor="name" className="font-medium">
               Username
@@ -14,7 +14,7 @@ function Form(props) {
               type="text"
               name="name"
               id="name"
-              className={`outline focus:outline-2 rounded-md px-3 py-2 ${props.validName ? "outline-blue-300" : "outline-red-500"}`}
+              className={`outline focus:outline-2 min-w-[200px] rounded-md px-3 py-2 ${props.validName ? "outline-blue-300" : "outline-red-500"}`}
             />
             {!props.validName && (
               <span class="mt-2 text-sm text-red-500">Please enter a name</span>
@@ -28,7 +28,7 @@ function Form(props) {
               type="text"
               name="mail"
               id="mail"
-              className={`outline focus:outline-2 rounded-md px-3 py-2 ${props.validEmail ? "outline-blue-300" : "outline-red-500"}`}
+              className={`outline focus:outline-2 min-w-[200px] rounded-md px-3 py-2 ${props.validEmail ? "outline-blue-300" : "outline-red-500"}`}
             />
             {!props.validEmail && (
               <span class="mt-2 text-sm text-red-500">
@@ -87,15 +87,17 @@ function Feedback() {
   }, []);
   console.log(validEmail);
   return (
-    <div className="bg-blue-200/50 rounded-4xl p-6 max-w-2xl mx-auto m-8">
-      <h2>{sender ? `Thanks ${sender} for your feedback!` : "Feedback"}</h2>
-      <Form
-        className={`transition-transform ${sender ? "scale-0 h-0" : "scale-100"}`}
-        validEmail={validEmail}
-        validFeedback={validFeedback}
-        validName={validName}
-        handleSubmit={handleSubmit}
-      />
+    <div className="ml-4 mr-4">
+      <div className="bg-blue-200/50 rounded-4xl p-6 max-w-2xl mx-auto mt-20 mb-8">
+        <h2>{sender ? `Thanks ${sender} for your feedback!` : "Feedback"}</h2>
+        <Form
+          className={`transition-transform ${sender ? "scale-0 h-0" : "scale-100"}`}
+          validEmail={validEmail}
+          validFeedback={validFeedback}
+          validName={validName}
+          handleSubmit={handleSubmit}
+        />
+      </div>
     </div>
   );
 }
