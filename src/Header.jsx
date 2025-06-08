@@ -10,15 +10,15 @@ function Header() {
         </a>
         <a
           className="text-center duration-300 transition-colors flex-1 pt-2 pb-2 rounded-full text-blue-950 font-medium hover:bg-blue-200"
-          href="#discussion"
-        >
-          Discussion
-        </a>
-        <a
-          className="text-center duration-300 transition-colors flex-1 pt-2 pb-2 rounded-full text-blue-950 font-medium hover:bg-blue-200"
           href="#result"
         >
           Result
+        </a>
+        <a
+          className="text-center duration-300 transition-colors flex-1 pt-2 pb-2 rounded-full text-blue-950 font-medium hover:bg-blue-200"
+          href="#discussion"
+        >
+          Discussion
         </a>
       </nav>
     </header>

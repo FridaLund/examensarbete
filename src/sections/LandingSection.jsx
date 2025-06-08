@@ -5,18 +5,16 @@ function LandingSection() {
     <section className="p-4 flex flex-col justify-between items-center gap-4 h-screen pt-20">
       <div className="flex items-start gap-9">
         <div className="flex flex-col gap-4">
-          <h1>Geo fencing in body worn solution</h1>
+          <h1 className="uppercase">Geofencing within Body Worn</h1>
           <p className="text-2xl font-medium">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet
-            cursus nunc, quis bibendum leo. Vivamus auctor metus sit amet mi
-            finibus pretium. Curabitur tellus lorem, tincidunt id dolor sit
-            amet, molestie pharetra ligula. Mauris eget congue nibh. Maecenas in
-            purus consectetur, feugiat quam at, venenatis mauris. Nullam ac.
+            A UX-research project to explore geofencing capabilities in Body
+            Worn solutions{" "}
           </p>
         </div>
         <img
           className="hidden md:block object-contain rounded-4xl max-w-[50%]"
-          src="/map.png"
+          src="/geofence.png"
+          alt=""
         ></img>
       </div>
       <div>

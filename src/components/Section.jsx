@@ -2,11 +2,14 @@ function Section(props) {
   return (
     <section
       id={props.id}
-      className={`flex scroll-pt-[64px] pl-4 pr-4 min-h-screen pt-20 flex-col-reverse md:flex-row justify-start items-start gap-4 last:min-h-fit ${props.reverse ? "md:flex-row-reverse" : ""}`}
+      className={`flex pl-4 pr-4 min-h-screen pt-20 flex-col-reverse md:flex-row justify-start items-start gap-4 last:min-h-fit ${
+        props.reverse ? "md:flex-row-reverse" : ""
+      }`}
     >
       <img
         className="md:w-[40%] md:mt-3 object-contain rounded-4xl"
         src={props.image.src}
+        alt={props.image.alt}
       ></img>
       <div>
         <h2>{props.title}</h2>

@@ -3,8 +3,8 @@ import LandingSection from "./sections/LandingSection";
 import Section from "./components/Section";
 import BackgroundSection from "./sections/BackgroundSection";
 import ResultSection from "./sections/ResultSection";
-import DiscussionSection from "./sections/DiscussionSection";
 import Feedback from "./sections/Feedback";
+import ReflectionSection from "./sections/ReflectionSection";
 
 function App() {
   return (
@@ -13,8 +13,8 @@ function App() {
       <main>
         <LandingSection />
         <BackgroundSection />
-        <DiscussionSection />
         <ResultSection />
+        <ReflectionSection />
       </main>
       <footer>
         <Feedback />
